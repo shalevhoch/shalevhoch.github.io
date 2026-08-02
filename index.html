@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>המשחקים של שלו</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(160deg, #0f1a14, #1a2e1f);
+    color: #f0d9a8;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+  }
+  h1 {
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  }
+  p.sub {
+    color: #a8c9b0;
+    margin-bottom: 40px;
+  }
+  .games {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 900px;
+  }
+  .game-card {
+    background: rgba(20, 35, 25, 0.7);
+    border: 2px solid #3a9d6e;
+    border-radius: 16px;
+    padding: 24px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.15s, border-color 0.15s;
+    display: block;
+  }
+  .game-card:hover, .game-card:active {
+    transform: translateY(-4px);
+    border-color: #f0d9a8;
+  }
+  .game-card h2 {
+    font-size: 1.3rem;
+    margin-bottom: 6px;
+  }
+  .game-card p {
+    color: #a8c9b0;
+    font-size: 0.95rem;
+  }
+</style>
+</head>
+<body>
+  <h1>🎮 המשחקים של שלו</h1>
+  <p class="sub">משחקים שבניתי בעצמי</p>
+  <div class="games">
+    <a class="game-card" href="/ninja_grip/">
+      <h2>🥷 גריפ נינג'ה</h2>
+      <p>משחק היפינג' ניגה מתמשך - תפוס חבלים ותברח מהמרחק</p>
+    </a>
+  </div>
+</body>
+</html>
